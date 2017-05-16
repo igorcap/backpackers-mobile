@@ -1,0 +1,10 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/home/jasane/projects/bkpck2/gulpfile.js",
+        "/home/jasane/projects/bkpck2/hooks/after_prepare/010_add_platform_class.js",
+        "/home/jasane/projects/bkpck2/www/lib/js/ionic.js",
+        "/home/jasane/projects/bkpck2/www/lib/js/ionic-angular.js",
+        "/home/jasane/projects/bkpck2/www/lib/js/ionic.bundle.js",
+        "/home/jasane/projects/bkpck2/www/lib/js/ionic.min.js"
+    ]
+}

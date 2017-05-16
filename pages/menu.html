@@ -1,0 +1,50 @@
+<ion-side-menus>
+	<ion-pane ion-side-menu-content ng-controller='HeaderCtrl' drag-content="false">
+		<ion-nav-bar type="bar-energized" left-buttons="leftButtons"></ion-nav-bar>
+		<ion-nav-view name="menuContent"></ion-nav-view>
+	</ion-pane>
+
+	<ion-side-menu side="left">
+		<header class="bar bar-header bar-energized">
+			<div class="title">Menu</div>
+		</header>
+		<!-- if you need scroll and click in menu: has-header="true" scroll="true" overflow-scroll="true" -->
+		<ion-content has-header="true">
+			<ul class="list">
+				<!--
+				<a href="#/app/login" data-click-menulink class="item item-icon-left">
+              <i class="icon ion-home"></i>
+              Login</a>
+-->
+				<a href="#/app/home" data-click-menulink class="item item-icon-left">
+					<i class="icon ion-home"></i>
+					Home
+				</a>
+				<a href="#/app/profile" data-click-menulink class="item item-icon-left">
+					<i class="icon ion-person"></i>My Profile
+				</a>
+				<a href="#/app/trips" data-click-menulink class="item item-icon-left">
+					<i class="icon ion-flag"></i>My Trips Requests
+				</a>
+				<a href="#/app/reviews" data-click-menulink class="item item-icon-left">
+					<i class="icon ion-checkmark"></i>My Reviews
+				</a>
+				<a href="#/app/wishlist" data-click-menulink class="item item-icon-left">
+					<i class="icon ion-star"></i>My Wishlist
+				</a>
+
+
+				<a href="#/app/map" data-click-menulink class="item item-icon-left">
+					<i class="icon ion-plane"></i>Find New Trip
+				</a>
+				<a href="#/app/about" data-click-menulink class="item item-icon-left">
+					<i class="icon ion-information"></i>About
+				</a>
+				<a href="#/app/logout" data-click-menulink class="item item-icon-left">
+					<i class="icon ion-log-out"></i>Logout
+				</a>
+
+			</ul>
+		</ion-content>
+	</ion-side-menu>
+</ion-side-menus>

@@ -1,0 +1,31 @@
+	<ion-view title="'Wishlist'" left-buttons="leftButtons" right-buttons="wishButtons">
+	<ion-content has-header="true">
+	<div class="card" id="topofpage" ng-controller="WiLiCtrl">
+	<div class="item item-divider">
+	<label class="item item-input">
+	   <i id="ckeck1" class="icon ion-compose"></i> <input type="text" style ="border-radius: 8px" ng-model="city" placeholder="City" />
+	  </label>
+	  <p></p>
+	  <label class="item item-input">
+			<i id="ckeck2" class="icon ion-compose"></i><input type="text" style ="border-radius: 8px" ng-model="country" placeholder="Country" /></label>
+
+	   <p></p>
+		<center><button class="button button-energized"style ="border-radius: 8px" style="display: block" ng-click="search()" menu-close>Search</button>
+		</center>
+
+<span class="input-label" ng-model="label" >{{label}}</span>
+
+ 	</div>
+	</div>
+	</ion-content>
+
+	</ion-view>
+
+
+
+
+
+
+
+
+

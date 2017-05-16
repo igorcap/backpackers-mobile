@@ -1,0 +1,28 @@
+<ion-view title="'Details'" left-buttons="leftButtons">
+
+    <ion-content has-header="true" padding="true">
+        <div class="card" id="topofpage">
+<center><h2><i id="loadingIcon" class="icon ion-loading-a" style="visibility:visible" ></i> {{label}}</h2></center>
+            <h4>{{city.name}}</h4>
+            <h5>Country: {{city.country_name}} -  {{city.country_iso_2}}</h5>
+            <h5>Alias: {{city.alias}}</h5>
+            <h5>Continent: {{city.continent}}</h5>
+            <h5>Latitude: {{city.latitude}}</h5>
+            <h5>Longitude: {{city.longitude}}</h5>
+            <h5>Description: {{city.description}}</h5>
+
+        </div>
+
+        <div class="item item-divider">Review | {{review}}</div>
+        <div class="item range range-positive">
+
+            0
+            <input type="range" name="volume" min="0" max="5" ng-model="review" >5
+
+        </div>
+<br />
+     <center>   <button class="button button-energized" style="border-radius: 8px" style="display: block" ng-click="create()" menu-close>Save Review</button>
+</center>
+    </ion-content>
+
+</ion-view>

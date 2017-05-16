@@ -1,0 +1,54 @@
+<ion-view title="'My Profile'" left-buttons="leftButtons">
+   <ion-content has-header="true" scroll="true">
+      <div class="card" id="topofpage" ng-controller="ProfileCtrl">
+         <div class="item item-divider">
+            User: {{user}}
+
+            <br />
+            <br />
+            <div>
+				{{label}}
+
+               <div class="item item-divider">
+                  {{user}}'s preferences
+                  <div class="list" class="wrapping-list">
+					   <div class="item item-divider">Sport  | {{sport}}</div>
+                     <div class="item range range-positive">
+
+                        0<input type="range" name="volume" min="0" max="5" value="{{sport}}" ng-model="sport">5
+
+                     </div>
+					  <div class="item item-divider">Adventure | {{adventure}}</div>
+                     <div class="item range range-positive">
+                        0<input type="range" name="volume" min="0" max="5" value="{{adventure}}" ng-model="adventure">5
+                     </div>
+					   <div class="item item-divider">Art and Culture | {{art_and_culture}}</div>
+                     <div class="item range range-positive">
+
+                        0<input type="range" name="volume" min="0" max="5" value="{{art_and_culture}}" ng-model="art_and_culture" >5
+                     </div>
+					   <div class="item item-divider">Entertainment | {{entertainment}}</div>
+                     <div class="item range range-positive">
+
+                        0<input type="range" name="volume" min="0" max="5" value="{{entertainment}}" ng-model="entertainment" >5
+                     </div>
+					   <div class="item item-divider">Landscape | {{landscape}}</div>
+                     <div class="item range range-positive">
+
+                        0<input type="range" name="volume" min="0" max="5" value="{{landscape}}" ng-model="landscape">5
+                     </div>
+					  <div class="item item-divider">Urban | {{urban}}</div>
+                     <div class="item range range-positive">
+
+                        0<input type="range" name="volume" min="0" max="5" value="{{urban}}" ng-model="urban">5
+                     </div>
+                  </div>
+				   <center>
+				   	<button class="button button-energized" style ="border-radius: 8px" style="display: block" ng-click="save()" menu-close>Save preferences</button><br/><br/><br/><br/><br/>
+ 	</center>
+               </div>
+            </div>
+         </div>
+      </div>
+   </ion-content>
+</ion-view>

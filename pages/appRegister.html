@@ -1,0 +1,28 @@
+<ion-view title="'Register'" >
+   <ion-content has-header="true">
+      <div class="card" id="topofpage" ng-controller="RegisterCtrl">
+         <div class="item item-divider">
+			<div><center><i id="loadingIcon" class="icon ion-loading-a" style="visibility:hidden" ></i> {{label}}</center></div>
+</div>
+		     <div class="item item-divider">
+            <label class="item item-input">
+            <i id="ckeckEmail" class="icon ion-compose"></i> <input type="text" style ="border-radius: 8px" ng-model="email" placeholder="Email" /></label>
+            <p></p>
+
+            <label class="item item-input">
+            <i id="ckeckUser" class="icon ion-compose"></i> <input type="text" style ="border-radius: 8px" ng-model="user" placeholder="Username" /></label>
+            <p></p>
+            <label class="item item-input">
+            <i id="ckeckPass" class="icon ion-compose"></i><input type="password" style ="border-radius: 8px" ng-model="pass" placeholder="Password" /></label>
+<p></p>
+
+			 <center>  <button class="button button-energized"style ="border-radius: 8px" style="display: block" ng-click="register()" menu-close>Register</button></center>
+			 <br />
+
+		  </div>
+		  <button class="button  button-full button-energized" ng-click="login()" menu-close>Or Log In Here</button>
+
+      </div>
+
+   </ion-content>
+</ion-view>

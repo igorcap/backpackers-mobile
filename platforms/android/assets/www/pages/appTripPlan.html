@@ -1,0 +1,30 @@
+<ion-view title="'Trip Plan'" left-buttons="leftButtons">
+
+	<ion-content has-header="true" padding="true">
+		<center>
+			<h1>
+            <i id="loadingIcon" class="icon ion-loading-a" ></i>
+         </h1>
+		</center>
+		<div class="card" id="topofpage">
+			<div id="card" class="item item-divider" style="visibility:hidden">
+				Total Cost: {{plan.total_cost}} €
+			</div>
+
+			<ion-list id="myList" style="visibility:hidden" class="wrapping-list">
+				<ion-item>
+					Itinerary
+				</ion-item>
+				<ion-item ng-repeat="rout in itinerary">
+					<p>Origin: {{rout.originCity.name}}</p>
+					<p>Destination: {{rout.destinationCity.name}}</p>
+					<b>Cost: {{rout.cost}} €</b>
+
+				</ion-item>
+			</ion-list>
+
+		</div>
+
+	</ion-content>
+
+</ion-view>
